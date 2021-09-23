@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parallax</title>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+
+		/* Configuração padrão da página*/
+		body, html {
+			margin: 0;
+			font: 16px "Lato", sans-serif;
+			color: #777;
+			height: 100%;
+		}
+		
+		.conteudo {
+			color: #777;
+			background-color: white;
+			text-align: justify;
+			padding: 50px 80px;
+		}
+
+		h3 {
+			text-transform: uppercase;
+			color: #111;
+			text-align: center;
+		}
+
+		p{
+			margin-bottom: 20px
+		}
+
+		/* Efeito Parallax */
+
+		.caixa1, .caixa2, .caixa3, .caixa4{
+			position: relative;
+			height: 100%;
+			opacity: 0.7;
+			background-repeat:no-repeat;
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+		}
+
+		.caixa1 {
+			background-image: url(imagens/imagem1.jpg);
+		}
+
+		.caixa2 {
+			background-image: url(imagens/imagem2.jpg);
+		}
+
+		.caixa3 {
+			background-image: url(imagens/imagem5.jpg);
+		}
+
+		.caixa4 {
+			background-image: url(imagens/imagem4.jpg);
+		}
+
+		.conteudo-titulo {
+			position: absolute;
+			left: 0;
+			top: 45%;
+			width: 100%;
+			text-align: center;
+		}
+
+		.conteudo-titulo span.titulo {
+			color: #fff;	
+			background-color: #111;
+			padding: 18px;
+			font-size: 25px;
+			letter-spacing: 5px;
+			text-transform: uppercase;
+		}
+
+	</style>
+
+</head>
+<body>
+
+<div class="caixa1">
+	<div class="conteudo-titulo">
+		<span class="titulo">Passeio de balões</span>
+	</div>
+</div>
+
+<div class="conteudo">
+	<h3>Parallax</h3>
+	<p>O parallax é uma técnica que cria a impressão de um ambiente 3D em uma tela 2D, utilizando movimento de tela. Funciona assim: as imagens são inseridas em camadas, os planos de fundo, e a medida que você navega pelo site, as imagens se movimentam mais lentamente do que a sua navegação.</p>
+
+	<p>O efeito parallax ocorre quando os elementos em primeiro plano de um conteúdo se movimentam em velocidade diferente dos elementos em segundo plano. O uso dessa abordagem se tornou uma tendência em desenvolvimento de páginas web nos últimos anos. Com o parallax, é possível deixar as páginas mais agradáveis de navegar, além de criar um design muito mais inovador para as pessoas usuárias.</p>
+</div>
+
+<div class="caixa2">
+	<div class="conteudo-titulo">
+		<span class="titulo">Pegando a estrada</span>
+	</div>
+</div>
+
+<div>
+	<h3>Como funciona</h3>
+	<p>Essa técnica foi utilizada inicialmente em desenhos e video games 2D. O parallax, nesses cenários, cria um efeito de profundidade: utilizando poucos recursos, foi possível criar uma sensação realista mesmo em baixa resolução.</p>
+</div>
+
+<div class="caixa3">
+	<div class="conteudo-titulo">
+		<span class="titulo">Ótimo pôr do sol</span>
+	</div>
+</div>
+
+<div>
+	<h3>Boas práticas para utilizar parallax</h3>
+	<p>O uso de adaptações para garantir que o conteúdo desktop seja exibido nos aparelhos mobile sem grandes mudanças, o parallax também é excelente, mas deve ser utilizado com cuidado.</p>
+	<p> Nem sempre ele será a melhor escolha de design para uma boa usabilidade. Por isso, é sempre bom manter a atenção e fazer uma integração que seja alinhada com a experiência de uso que deseja entregar para cada visitante e quanto mais inovação se usar, maiores serão as chances de encar o público-alvo.</p>
+</div>
+
+<div class="caixa4">
+	<div class="conteudo-titulo">
+		<span class="titulo">Montanhas</span>
+	</div>
+</div>
+
+</body>
+</html>
